@@ -1,0 +1,196 @@
+
+
+<!-- Typically we'll want some inline styles directly on the html and body tags to set up the email template — CodePen doesn't let me do that here though... So examples are just commented out
+
+<html 
+  xmlns="http://www.w3.org/1999/xhtml" 
+  style="background: #E8EAEB;" 
+  background="#E8EAEB;"
+>
+<body 
+	style="margin: 0; 
+		padding: 0; 
+		background: #E8EAEB; 
+		font-family: Verdana, sans-serif; 
+		color: #000000; 
+		line-height: 150%; 
+		-webkit-text-size-adjust: none; 
+		-webkit-font-smoothing: antialiased; 
+		-moz-font-smoothing: antialiased; 
+		font-smoothing: antialiased;"
+>
+-->
+
+
+<!-- faux body -->
+<!-- Note: Some older email clients and webmail clients were known to strip out the <body> elements when rendering it in their software's viewport, so this faux-body is just an outter wrapper element to reinforce structure and the main background color -->
+    <div id="faux-body" style="background: #E8EAEB; font-family: verdana, sans-serif;  ">
+  
+        <!-- CSS + Media Query for Mobile -->
+        <style type="text/css">
+          
+          /* Note: all the CSS that is in the CSS panel would be ported into this <style> block for the final templates */
+          
+        </style>
+          
+        
+        <!-- Note: Table-based markup may still be needed since some versions of MS Outlook still use an older rendering engine from MS Word that isn't fully capable of tableless layout methods and full CSS2 spec. Check these two support tables for examples around this:
+          https://www.caniemail.com/search/?s=margin
+          https://www.caniemail.com/search/?s=padding
+        -->
+          
+          
+          
+        <!-- Wrapper Outter (for Gutters) -->
+        <table 
+            id="wrapper-outter" 
+            align="center" 
+            border="0" 
+            cellpadding="0" 
+            cellspacing="0" 
+            style="border-collapse:collapse; 
+                margin: 0 auto; 
+                width: 624px;" 
+            width="624"
+        >
+        <tr><td valign="top" width="12">&nbsp;</td><td>
+          
+          
+          
+        <!-- Wrapper -->
+        <table 
+            id="wrapper" 
+            align="center" 
+            border="0" 
+            cellpadding="0" 
+            cellspacing="0" 
+            style="border-collapse:collapse; 
+                font-family: verdana, sans-serif;  
+                font-size: 18px;
+                line-height: 150%;
+                margin: 0 auto; 
+                width: 600px;" 
+            width="600"
+        >
+          
+          
+          
+          
+          
+          <!-- Preheader Text For Preview/Subject Values -->
+          <!-- Note: This elements is NOT displayed in the email render, but is visible in the inbox view along with the subject line text -->
+        
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" class="header-text" style="border-collapse:collapse; display: none !important; height: 0px !important;" width="100%" height="0">
+                        <tr>
+                            <td bgcolor="#273A4B" style="text-align: center; vertical-align: middle; height: 20px; max-width: 472px;">
+                                <span class="" style="color: #000000; font-size: 11px;">
+                                    hello my nam eis aayush i wan tto maka an email template
+                      
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+          <!-- /end Pre-header text -->
+          
+          
+          
+          
+          
+          <!-- Email body -->
+          <tr>
+                <td bgcolor="#ffffff" style="background: #fff; padding: 0 0 0 0; width: 600px;">
+          
+              <!-- Margin -->
+                    <table border="0" cellpadding="0" cellspacing="0"><tr><td height="32" style="font-size: 0px;">&nbsp;</td></tr></table>
+            
+        
+              <!-- Blurb -->
+                    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse; margin: 0 auto; width: 600px;" width="600">
+                <tr>
+                  <td valign="top" width="64" class="faux-side-margin">&nbsp;</td>
+                  <td>
+                        
+                    <p class="blurb" style="font-size:1.0em; padding: 0 0 0 0; margin: 0;"> 
+        
+                      Welcome to the Gore Gaskets Store. For your protection, your new account has been locked. Please use the link below to activate your account and get started. 
+        
+                    </p>
+                        
+                    </td><td valign="top" width="64" class="faux-side-margin">&nbsp;</td></tr></table>
+                    <!-- /end Blurb -->
+              
+              
+              <!-- Margin -->
+                    <table border="0" cellpadding="0" cellspacing="0"><tr><td height="48" style="font-size: 0px;">&nbsp;</td></tr></table>
+              
+              
+              
+              <!-- CTA Table -->
+                    <table 
+                        class="cta-table"
+                        cellspacing="0" cellpadding="0" border="0" 
+                        style="font-family: verdana, sans-serif; width: 100%; margin: 0 auto;" 
+                        width="580"
+                    >
+                        <tr>
+                            <td width="64" class="faux-side-margin" >
+                                &nbsp;
+                            </td>
+                  <td>
+                    <!-- inner-table is needed here for the 'inline button' look where the button shrink-wraps its content... if using block buttons we wouldn't need the inner-table wrapper -->
+                    <table class="inline-bttn" border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td width="100%" 
+                          valign="center"
+                          style=" 
+                          font-size: 16px; 
+                          line-height: 1.25em;
+                          text-align: center;
+                          color: #ffffff; 
+                          text-decoration: none; 
+                          background-color: #DA291C; 
+                          border-radius: 1.5px;"
+                        >
+                          <a href="#" target="_blank" style="text-decoration: none; color: #ffffff; padding: 11px 20px 11px 20px; display: block; border: 1px solid transparent;">
+                            <span>Activate Your Account</span>
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td width="64" class="faux-side-margin">
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+              
+              
+              
+              
+              <!-- Margin -->
+                    <table border="0" cellpadding="0" cellspacing="0"><tr><td height="48" style="font-size: 0px;">&nbsp;</td></tr></table>
+              
+              
+          
+            </td>
+          </tr>
+          <!--  /end Email body -->
+          
+        
+          
+          
+        </table><!-- /end Wrapper -->
+          
+          
+          
+        </td><td valign="top" width="12">&nbsp;</td></tr></table><!-- /end Wrapper Outter (for Gutters) -->
+          
+          
+          
+          
+          
+        </div><!-- /end faux body -->

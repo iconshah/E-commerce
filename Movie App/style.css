@@ -1,0 +1,124 @@
+*{
+    background-color: #38383a;
+    color: aliceblue;
+    font-family: Sansita;
+
+}
+body{
+    padding-left: 1rem;
+}
+img{
+    height: 200px;
+}
+#heading{
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.5rem;
+    font-style: bold;
+    font-weight: 900;
+    
+}
+#search-bar{
+    display: flex;
+}
+.form-group{
+    display: inline-block;
+    width: 85vw;
+}
+
+#search{
+    color: white;
+    background-color: rgb(24, 61, 65);
+    outline: none;
+    min-height: 25px;
+    text-align: center;
+    font-weight: 400;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1;
+    border-radius: .5rem;
+    height: 35px;
+}
+#search:hover{
+    background-color: #EDB12F;
+    transition: ease 0.3s;
+}
+
+#inputValue{
+    width: 80vw;
+    font-size: 1rem;
+    font-weight: 400;
+    outline: none;
+    min-height: 25px;
+    font-weight: 400;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 1px solid grey;
+    border-radius: .25rem;
+    margin-bottom: 5px;
+    background-color: white;
+    color: #38383a;
+
+}
+
+section{
+    display: flex;
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+    /* background-color: #6e3129; */
+  
+}
+section img{
+    width: 180px;
+    margin: 5px;
+
+}
+img:hover{
+    margin-left: 0 40px;
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: ease 0.3s;
+    border-radius: 25px;
+
+}
+.content{
+    /* border: 1px solid #032541; */
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+    margin-top: 25px;
+    /* background-color: #032541; */
+    color: white;
+    position: relative;
+ }
+ #content-close{
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 0.3rem;
+    right: 1.1rem;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 1.3rem;
+    text-align: center;
+    background-color: red;
+        
+    
+ }
+.content div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 50px;
+}
+
+.content-display{
+    display: block;
+  
+
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="refresh" content="3"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            border: 2px solid black;
+            width: 500px;
+            height: 300px;
+            display: block;
+            margin: auto;
+        }
+
+        .main h2 {
+            text-align: center;
+        }
+
+        #innerNUm {
+            border: 2px solid red;
+            height: 30px;
+            width: 50px;
+            display: block;
+            margin: auto;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .buttons {
+            margin-top: 60px;
+            display: flex;
+
+        }
+
+        .buttons button {
+            margin: auto;
+            width: 50px;
+            font-size: 20px;
+            background-color: aqua;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 8px;
+
+        }
+
+        button:hover {
+            background-color: bisque;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <h2>Click (+) to increase and (-) to decrease the number displayed.</h2>
+
+        <div>
+            <p id="innerNUm">0</p>
+        </div>
+
+        <div class="buttons">
+            <button id="inc">
+                +
+            </button>
+            <button id="dec">
+                -
+            </button>
+        </div>
+
+    </div>
+
+
+    <script src="Counter.js"></script>
+</body>
+
+</html>
